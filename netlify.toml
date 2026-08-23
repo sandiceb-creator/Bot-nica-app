@@ -1,0 +1,8 @@
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/json"
+
+[build]
+  publish = "."
