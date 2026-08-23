@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sandiceb.botanica",
+      "sha256_cert_fingerprints": [
+        "E5:5A:EE:71:85:4C:DF:B8:C8:11:4C:37:72:7D:25:BC:CB:C7:86:9F:1F:DE:FA:C5:EA:67:0D:A1:A0:BA:12:58"
+      ]
+    }
+  }
+]
