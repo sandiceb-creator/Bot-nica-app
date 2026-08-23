@@ -1,2 +1,0 @@
- 📄 index.html        ← este archivo
-   📄 manifest.json     ← el JSON que también descargaste
