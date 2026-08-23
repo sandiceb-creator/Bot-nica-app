@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar cuenta - Botanica Guía Natural</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0f1a0f;color:#f0e8d5;font-family:'DM Sans',Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+.card{background:#162416;border:1px solid rgba(201,149,74,.25);border-radius:20px;padding:32px 28px;max-width:480px;width:100%}
+h1{font-family:Georgia,serif;font-style:italic;color:#c9954a;font-size:1.5rem;margin-bottom:6px}
+.sub{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#b5a98a;margin-bottom:24px}
+p{font-size:.9rem;color:#b5a98a;line-height:1.7;margin-bottom:16px}
+label{display:block;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:#b5a98a;margin-bottom:6px}
+input,textarea{width:100%;padding:12px 16px;background:#0f1a0f;border:1px solid rgba(201,149,74,.25);border-radius:12px;color:#f0e8d5;font-family:Arial,sans-serif;font-size:.9rem;outline:none;margin-bottom:16px}
+textarea{height:100px;resize:vertical}
+button{width:100%;padding:14px;background:linear-gradient(135deg,#d4a050,#f0c878);color:#0f1a0f;font-weight:700;border:none;border-radius:14px;font-size:.9rem;cursor:pointer;margin-top:8px}
+.warn{background:rgba(140,74,74,.12);border:1px solid rgba(140,74,74,.35);border-radius:12px;padding:14px 16px;font-size:.82rem;color:#e8a0a0;margin-bottom:20px;line-height:1.6}
+.ok{display:none;background:rgba(74,140,92,.12);border:1px solid rgba(74,140,92,.35);border-radius:12px;padding:20px;text-align:center;color:#7dd68e}
+.logo{font-family:Georgia,serif;font-style:italic;color:#c9954a;font-size:1.2rem;text-align:center;margin-bottom:24px}
+.logo span{display:block;font-family:Arial;font-style:normal;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:#b5a98a}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">🌿 Botanica<span>Guía Natural</span></div>
+  <h1>Eliminar mi cuenta</h1>
+  <div class="sub">Solicitud de eliminación de datos</div>
+
+  <div class="warn">⚠️ Esta acción eliminará permanentemente tu cuenta y todos tus datos personales (favoritas, perfil, historial). No se puede deshacer.</div>
+
+  <p>Si también quieres eliminar los datos almacenados localmente en tu dispositivo, ve a <strong style="color:#f0e8d5">Mi Área → Eliminar mi cuenta</strong> dentro de la app.</p>
+
+  <div id="form">
+    <label>Correo electrónico de tu cuenta</label>
+    <input type="email" id="email" placeholder="tu@correo.com">
+    
+    <label>Motivo (opcional)</label>
+    <textarea id="reason" placeholder="¿Por qué quieres eliminar tu cuenta?"></textarea>
+
+    <button onclick="send()">🗑️ Solicitar eliminación de cuenta</button>
+  </div>
+
+  <div class="ok" id="ok">
+    <div style="font-size:2rem;margin-bottom:8px">✅</div>
+    <strong>Solicitud recibida</strong><br>
+    <span style="font-size:.85rem;opacity:.8">Procesaremos tu solicitud en un plazo de 30 días y te confirmaremos por email.</span>
+  </div>
+
+  <p style="margin-top:20px;font-size:.78rem;opacity:.6;text-align:center">¿Tienes dudas? Escríbenos a <a href="mailto:soportebotanicapp@gmail.com" style="color:#c9954a">soportebotanicapp@gmail.com</a></p>
+</div>
+
+<script>
+function send(){
+  var e=document.getElementById('email').value;
+  if(!e||e.indexOf('@')<0){alert('Por favor introduce tu correo electrónico.');return}
+  document.getElementById('form').style.display='none';
+  document.getElementById('ok').style.display='block';
+}
+</script>
+</body>
+</html>
