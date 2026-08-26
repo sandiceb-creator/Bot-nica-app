@@ -11,7 +11,10 @@
   "theme_color": "#0f1a0f",
   "lang": "es",
   "dir": "ltr",
-  "categories": ["health", "lifestyle"],
+  "categories": [
+    "health",
+    "lifestyle"
+  ],
   "icons": [
     {
       "src": "icon.png",
