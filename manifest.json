@@ -1,0 +1,29 @@
+{
+  "name": "Botanica - Guía Natural",
+  "short_name": "Botanica",
+  "description": "Guía de cuidado natural con plantas y aceites esenciales",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1a0f",
+  "theme_color": "#0f1a0f",
+  "lang": "es",
+  "categories": ["health", "lifestyle"],
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
